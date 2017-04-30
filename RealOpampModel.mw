@@ -90,7 +90,7 @@
 <Task/><Presentation-Block>
 <Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L141" drawlabel="true" applyint="true" applyrational="true">
 <Input>
-<Text-field style="Text" layout="Normal">Simulating OpAmp transfer function as one multiplier by 1/g and two RCs with f0 and f1 turn points</Text-field>
+<Text-field style="Text" layout="Normal">Simulating OpAmp transfer function as one multiplier by G and two RCs with f0 and f1 turn points</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L137" drawlabel="true" applyint="true" applyrational="true">
@@ -137,28 +137,58 @@
 </Group></Presentation-Block><Presentation-Block>
 <Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L139" drawlabel="true" applyint="true" applyrational="true">
 <Input>
-<Text-field style="Text" layout="Normal">Full amplification (using g = 1/G so it is small)</Text-field>
+<Text-field style="Text" layout="Normal"></Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
-<Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L135" drawlabel="true" applyint="true" applyrational="true" redirect-target="L132">
+<Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L144" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYpLUkjbWlHRiQ2JVEjVGZGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSomY29sb25lcTtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JKG1mZW5jZWRHRiQ2JC1GIzYrLUYsNiVRImZGJ0YvRjItRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTlEsMC4zMzMzMzMzZW1GJy1GLDYlUSNmMEYnRi9GMkZXLUYsNiVRI2YxRidGL0YyRlctRiw2JVEiZ0YnRi9GMi8lK2V4ZWN1dGFibGVHRj1GOUY5LUY2Ni1RKCZzcmFycjtGJ0Y5RjtGPkZARkJGREZGRkhGZW4vRk5GZm4tSSZtZnJhY0dGJDYoLUYjNiYtRiw2JVEnUkNSQ3RmRidGL0YyLUZQNiQtRiM2KUZURldGaW5GV0Zcb0Zib0Y5RjlGYm9GOS1GIzYnRl9vRi9GYm8vJTBmb250X3N0eWxlX25hbWVHUSgyRH5NYXRoRidGMi8lLmxpbmV0aGlja25lc3NHUSIxRicvJStkZW5vbWFsaWduR1EnY2VudGVyRicvJSludW1hbGlnbkdGXnEvJSliZXZlbGxlZEdGPUZib0Y5">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYpLUkjbWlHRiQ2JVEjVGZGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSomY29sb25lcTtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JKG1mZW5jZWRHRiQ2JC1GIzYrLUYsNiVRImZGJ0YvRjItRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTlEsMC4zMzMzMzMzZW1GJy1GLDYlUSNmMEYnRi9GMkZXLUYsNiVRI2YxRidGL0YyRlctRiw2JVEiZ0YnRi9GMi8lK2V4ZWN1dGFibGVHRj1GOUY5LUY2Ni1RKCZzcmFycjtGJ0Y5RjtGPkZARkJGREZGRkhGZW4vRk5GZm4tSSZtZnJhY0dGJDYoLUYjNiYtRiw2JVEnUkNSQ3RmRidGL0YyLUZQNiQtRiM2KUZURldGaW5GV0Zcb0Zib0Y5RjlGYm9GOS1GIzYnRl9vRi9GYm8vJTBmb250X3N0eWxlX25hbWVHUSgyRH5NYXRoRidGMi8lLmxpbmV0aGlja25lc3NHUSIxRicvJStkZW5vbWFsaWduR1EnY2VudGVyRicvJSludW1hbGlnbkdGXnEvJSliZXZlbGxlZEdGPUZib0Y5</Equation></Text-field>
+<Text-field style="Text" layout="Normal">What we can find in spec usually is</Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L145" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input>
+<Text-field style="Text" layout="Normal">Open loop gain for DC G0</Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L146" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input>
+<Text-field style="Text" layout="Normal">GBP, f0=GBP/G0</Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L149" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input>
+<Text-field style="Text" layout="Normal">Place of second pole on Open loop gain/freq plot - f1</Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L150" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input>
+<Text-field style="Text" layout="Normal">In this case our model transfer function is this</Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L152" drawlabel="true" applyint="true" applyrational="true">
+<Input>
+<Text-field style="Text" layout="Normal">Full amplification</Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L153" drawlabel="true" applyint="true" applyrational="true" redirect-target="L154">
+<Input>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="Tf := proc (f, G0, GBP, f1) options operator, arrow; RCRCtf(f, GBP/G0, f1)*G0 end proc" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYsLUkjbWlHRiQ2JVEjVGZGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSomY29sb25lcTtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JKG1mZW5jZWRHRiQ2JC1GIzYrLUYsNiVRImZGJ0YvRjItRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTlEsMC4zMzMzMzMzZW1GJy1GLDYlUSNHMEYnRi9GMkZXLUYsNiVRJEdCUEYnRi9GMkZXLUYsNiVRI2YxRidGL0YyLyUrZXhlY3V0YWJsZUdGPUY5RjktRjY2LVEoJnNyYXJyO0YnRjlGO0Y+RkBGQkZERkZGSEZlbi9GTkZmbi1GLDYlUSdSQ1JDdGZGJ0YvRjItRlA2JC1GIzYpRlRGVy1JJm1mcmFjR0YkNihGXG8tRiM2JUZpbkYvRjIvJS5saW5ldGhpY2tuZXNzR1EiMUYnLyUrZGVub21hbGlnbkdRJ2NlbnRlckYnLyUpbnVtYWxpZ25HRmlwLyUpYmV2ZWxsZWRHRj1GV0Zfb0Zib0Y5RjktRjY2LVEnJnNkb3Q7RidGOUY7Rj5GQEZCRkRGRkZIRmVuRmdvRmluRmJvRjk=">PkkjVGZHNiJmKjYmSSJmR0YkSSNHMEdGJEkkR0JQR0YkSSNmMUdGJEYkNiRJKW9wZXJhdG9yR0YkSSZhcnJvd0dGJEYkKiYtSSdSQ1JDdGZHRiQ2JTkkKiY5JiIiIjklISIiOSdGNUY2RjVGJEYkRiQ=</Equation></Text-field>
 </Input>
 <Output>
 <Text-field superscript="false" placeholder="false" executable="false" selection-placeholder="false" italic="false" size="12" bold="false" subscript="false" family="Times New Roman" opaque="false" underline="false" background="[255,255,255]" readonly="false" foreground="[0,0,0]" alignment="centred" firstindent="0" spacebelow="0" leftmargin="0" linespacing="0.0" initial="0" linebreak="space" rightmargin="0" bulletsuffix="" spaceabove="0" bullet="none" pagebreak-before="false"><Equation executable="false" style="2D Output" display="LUkjbWlHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JVE1b3V0cHV0fnJlZGlyZWN0ZWQuLi5GJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRic=">LUkjbWlHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JVE1b3V0cHV0fnJlZGlyZWN0ZWQuLi5GJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRic=</Equation></Text-field>
 </Output>
 </Group>
-<Group view="presentation" hide-input="true" hide-output="false" inline-output="false" labelreference="L140" drawlabel="true" applyint="true" applyrational="true" redirect-source="L87">
+<Group view="presentation" hide-input="true" hide-output="false" inline-output="false" labelreference="L154" drawlabel="true" applyint="true" applyrational="true" redirect-source="L153">
 <Input>
-<Text-field prompt="&gt; " style="Maple Input" layout="Normal">print(<Label label="L135" view="label" executable="true"></Label>); # input placeholder</Text-field>
+<Text-field prompt="&gt; " style="Maple Input" layout="Normal">print(<Label label="L153" view="label" executable="true"></Label>); # input placeholder</Text-field>
 </Input>
 <Output>
-<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkobWZlbmNlZEdGJDYkLUYjNiwtSSNtaUdGJDYlUSJmRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEiLEYnL0Y4USdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGNi8lKXN0cmV0Y2h5R0ZCLyUqc3ltbWV0cmljR0ZCLyUobGFyZ2VvcEdGQi8lLm1vdmFibGVsaW1pdHNHRkIvJSdhY2NlbnRHRkIvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1GMTYlUSNmMEYnRjRGN0Y6LUYxNiVRI2YxRidGNEY3RjotRjE2JVEiZ0YnRjRGNy8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGQkY+Rj4tRjs2LVEoJiM4NTk0O0YnRj5GQC9GREZCRkVGR0ZJRktGTUZPL0ZTRlEtSSZtZnJhY0dGJDYoLUYjNiYtRiM2KC1GMTYlUSdSQ1JDdGZGJ0Y0RjctRjs2LVEwJkFwcGx5RnVuY3Rpb247RidGPkZARmBvRkVGR0ZJRktGTUZPRmFvLUYsNiQtRiM2KkYwRjpGVUY6RlhGaG5GW29GPkY+RmhuRltvRj5GaG5GW29GPi1GIzYmRmVuRmhuRltvRj4vJS5saW5ldGhpY2tuZXNzR1EiMUYnLyUrZGVub21hbGlnbkdRJ2NlbnRlckYnLyUpbnVtYWxpZ25HRmpwLyUpYmV2ZWxsZWRHRkJGaG5GW29GPg==">Zio2JkkiZkc2IkkjZjBHRiVJI2YxR0YlSSJnR0YlRiU2JEkpb3BlcmF0b3JHRiVJJmFycm93R0YlRiUqJi1JJ1JDUkN0ZkdGJTYlRiRGJkYnIiIiRighIiJGJUYlRiU=</Equation></Text-field>
+<Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkobWZlbmNlZEdGJDYkLUYjNiwtSSNtaUdGJDYlUSJmRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEiLEYnL0Y4USdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGNi8lKXN0cmV0Y2h5R0ZCLyUqc3ltbWV0cmljR0ZCLyUobGFyZ2VvcEdGQi8lLm1vdmFibGVsaW1pdHNHRkIvJSdhY2NlbnRHRkIvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1GMTYlUSNHMEYnRjRGN0Y6LUYxNiVRJEdCUEYnRjRGN0Y6LUYxNiVRI2YxRidGNEY3LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0ZCRj5GPi1GOzYtUSgmIzg1OTQ7RidGPkZAL0ZERkJGRUZHRklGS0ZNRk8vRlNGUS1GIzYmLUYjNigtRjE2JVEnUkNSQ3RmRidGNEY3LUY7Ni1RMCZBcHBseUZ1bmN0aW9uO0YnRj5GQEZgb0ZFRkdGSUZLRk1GT0Zhby1GLDYkLUYjNipGMEY6LUkmbWZyYWNHRiQ2KC1GIzYmRlhGaG5GW29GPi1GIzYmRlVGaG5GW29GPi8lLmxpbmV0aGlja25lc3NHUSIxRicvJStkZW5vbWFsaWduR1EnY2VudGVyRicvJSludW1hbGlnbkdGXHEvJSliZXZlbGxlZEdGQkY6RmVuRmhuRltvRj5GPkZobkZbb0Y+LUY7Ni1RMSZJbnZpc2libGVUaW1lcztGJ0Y+RkBGYG9GRUZHRklGS0ZNRk9GYW9GVUY+RmhuRltvRj4=">Zio2JkkiZkc2IkkjRzBHRiVJJEdCUEdGJUkjZjFHRiVGJTYkSSlvcGVyYXRvckdGJUkmYXJyb3dHRiVGJSomLUknUkNSQ3RmR0YlNiU5JComOSYiIiI5JSEiIjknRjNGNEYzRiVGJUYl</Equation></Text-field>
 </Output>
 </Group></Presentation-Block><Presentation-Block>
-<Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L144" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L147" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input>
-<Text-field style="Text" layout="Normal"><Equation executable="false" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYkLUkjbWlHRiQ2I1EhRicvJSxtYXRodmFyaWFudEdRJ25vcm1hbEYn">JSFH</Equation></Text-field>
+<Text-field style="Text" layout="Normal"> </Text-field>
 </Input>
 </Group></Presentation-Block>
 </Worksheet>
